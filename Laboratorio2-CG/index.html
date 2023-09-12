@@ -6,66 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Algoritmos Laboratório 2 CG</title>
         <link rel="stylesheet" href="styles.css">
-        <script defer src="dda.js"></script>
+        <script defer src="algoritmos.js"></script>
     </head>
 
     <body>
         <div class="title">
             <h1>Algoritmos Laboratório 2</h1>
         </div>
-    </body>
-
-    
-    <head>
-        <title>Plano Cartesiano em JavaScript</title>
-    </head>
-    <body>
-        <canvas id="cartesian-plane" width="400" height="400"></canvas>
-        
-        <script>
-            // Obtém o elemento canvas e seu contexto 2D
-            const canvas = document.getElementById('cartesian-plane');
-            const ctx = canvas.getContext('2d');
-    
-            // Define a origem do plano cartesiano (centro do canvas)
-            const centerX = canvas.width / 2;
-            const centerY = canvas.height / 2;
-    
-            // Desenha o eixo X
-            ctx.beginPath();
-            ctx.moveTo(0, centerY);
-            ctx.lineTo(canvas.width, centerY);
-            ctx.strokeStyle = 'black';
-            ctx.stroke();
-    
-            // Desenha o eixo Y
-            ctx.beginPath();
-            ctx.moveTo(centerX, 0);
-            ctx.lineTo(centerX, canvas.height);
-            ctx.strokeStyle = 'black';
-            ctx.stroke();
-    
-            // Opcional: Etiquetas nos eixos
-            ctx.fillStyle = 'black';
-            ctx.font = '12px Arial';
-            ctx.fillText('X', canvas.width - 10, centerY - 5);
-            ctx.fillText('Y', centerX + 5, 10);
-    
-            // Exemplo de plotagem de um ponto (2, 3) no plano cartesiano
-            const x = 2;
-            const y = -3; // A coordenada y é invertida no plano cartesiano
-    
-            // Converte as coordenadas para o sistema de coordenadas do canvas
-            const canvasX = centerX + x;
-            const canvasY = centerY - y; // Inverta a coordenada y
-    
-            // Desenha um ponto em (2, 3) no plano cartesiano
-            ctx.beginPath();
-            ctx.arc(canvasX, canvasY, 4, 0, Math.PI * 2);
-            ctx.fillStyle = 'red';
-            ctx.fill();
-    
-        </script>
     </body>
     </html>
     
